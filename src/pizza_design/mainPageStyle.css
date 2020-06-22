@@ -1,0 +1,134 @@
+body {
+    background-color: #f0c667;
+}
+
+.main {
+    margin: 3%;
+    background-color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: red;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    background-color: grey;
+}
+
+.header__logo img {
+    height: 8vh;
+    width: 8vh;
+    display: flex;
+}
+
+.header__button {
+    width: auto;
+    display: flex;
+    align-self: center;
+}
+
+.header__button button {
+    height: 5vh;
+}
+
+.categories {
+    padding-top: 5vh;
+    background-color: royalblue;
+}
+
+.categories__filter {
+    flex-basis: 60%;
+    display: flex;
+}
+
+.list_horizontal {
+    padding: 0;
+    margin: 0;
+}
+
+.list_horizontal li {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.content {
+    padding-top: 2vh;
+    background-color: green;
+}
+
+.content__items {
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pizza {
+    margin-bottom: 10px;
+    height: 35vh;
+    width: 30vh;
+    background-color: grey;
+    text-align: center;
+}
+
+.pizza__image {
+    margin-left: 2.5vh;
+    height: 25vh;
+    width: 25vh;
+    background-color: aqua;
+}
+
+.pizza__title {
+
+}
+
+.pizza__settings {
+    padding: 2%;
+    background-color: coral;
+}
+
+.pizza_dough {
+    width: 45%;
+}
+
+.pizza_size {
+    width: 30%;
+}
+
+.pizza__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pizza__price {
+
+}
+
+.pizza__button {
+
+}
+
+.title {
+    flex-basis: content;
+    background-color: grey;
+}
+
+.filter {
+    margin-right: 5px;
+}
