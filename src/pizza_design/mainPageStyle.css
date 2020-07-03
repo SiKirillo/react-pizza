@@ -3,8 +3,10 @@ body {
 }
 
 .main {
+    border-radius: 0.5em;
     margin: 3%;
     font-size: 20px;
+    font-family: Gill Sans, sans-serif;
     background-color: white;
 }
 
@@ -23,7 +25,7 @@ body {
 .header {
     height: 6em;
     background-color: red;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid #cecccc;
 }
 
 .header__logo {
@@ -36,19 +38,21 @@ body {
     height: 6em;
 }
 
-.title_large {
+.text_large {
     font-size: 1.5em;
 }
 
-.title_medium {
+.text_medium {
     font-size: 1.2em;
 }
 
-.header__button {
-    height: 2em;
-    width: 6em;
-    background-color: #2b2727;
-    align-self: center;
+.text_selected {
+    font-weight: bold;
+    color: orangered;
+}
+
+.text_disable {
+    color: #898888;
 }
 
 .categories {
@@ -56,13 +60,22 @@ body {
     background-color: royalblue;
 }
 
-.pizza-category {
-    background-color: gray;
-    margin-right: 0.2em;
+.categories__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.categories__filter {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .categories__sort {
     font-size: 0.9em;
+    display: flex;
+    align-items: center;
 }
 
 .sort-label {
@@ -70,6 +83,7 @@ body {
 }
 
 .sort-bottom {
+    background-color: aqua;
     display: none;
 }
 
@@ -109,31 +123,14 @@ body {
 
 .pizza__filter {
     padding: 0.2em;
-    background-color: gray;
+    background-color: orange;
     height: 4em;
-    text-align: center;
+    border-radius: 0.5em;
 }
 
-.pizza-dough__parameters {
+.pizza__parameters {
     display: flex;
     height: 50%;
-}
-
-.pizza-dough {
-    margin: 0.1em;
-    background-color: coral;
-    width: 50%;
-}
-
-.pizza-size__parameters {
-    display: flex;
-    height: 50%;
-}
-
-.pizza-size {
-    margin: 0.1em;
-    background-color: coral;
-    width: 50%;
 }
 
 .pizza__bottom {
@@ -143,12 +140,99 @@ body {
 }
 
 .pizza__price {
-    margin-left: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.pizza__button {
-    margin-right: 0.3em;
+/*.button-layout-pizza-settings {*/
+/*    margin: 0.1em;*/
+/*    background-color: coral;*/
+/*    width: 50%;*/
+/*    border-radius: 0.25em;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+.button-layout {
+    background-color: gray;
+    border-radius: 1em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza-settings-button {
+    background-color: transparent;
+    margin: 0.1em;
     height: 1.8em;
-    width: 5em;
-    background-color: #2b2727;
+    width: 50%;
+    border-radius: 0.3em;
+}
+
+.category-button {
+    background-color: #cecccc;
+    margin-right: 0.2em;
+    margin-bottom: 0.2em;
+    text-align: center;
+    padding-right: 1em;
+    padding-left: 1em;
+    height: 2.2em;
+}
+
+.header-button {
+    word-break: break-all;
+    overflow: hidden;
+    background-color: orangered;
+    color: white;
+    height: 2.5em;
+    border-radius: 1.2em;
+    align-self: center;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.bottom-button {
+    background-color: white;
+    border: 2px solid orangered;
+    color: orangered;
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+}
+
+.button_selected {
+    background-color: orangered;
+    color: white;
+}
+
+.categories .button_selected {
+    background-color: #1b1b23;
+}
+
+.pizza__parameters .button_selected {
+    background-color: white;
+    color: black;
+}
+
+.button_disable {
+    color: #b3b3b3;
+}
+
+.button_re-selected {
+    background-color: orangered;
+    color: white;
+    margin-left: 0.5em;
+    border-radius: 1.4em;
+    height: 1.4em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+.button_selected .button_re-selected {
+    background-color: white;
+    color: orangered;
 }
