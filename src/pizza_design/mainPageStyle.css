@@ -24,26 +24,32 @@ body {
 
 .header {
     height: 6em;
-    background-color: red;
-    border-bottom: 2px solid #cecccc;
+    border-bottom: 1px solid #cecccc;
 }
 
 .header__logo {
     display: flex;
     align-items: center;
-    background-color: grey;
 }
 
 .header__logo img {
     height: 6em;
 }
 
-.text_large {
+.text_1-5em {
     font-size: 1.5em;
 }
 
-.text_medium {
+.text_1-2em {
     font-size: 1.2em;
+}
+
+.text_0-9em {
+    font-size: 0.9em;
+}
+
+.text_0-8em {
+    font-size: 0.8em;
 }
 
 .text_selected {
@@ -56,8 +62,7 @@ body {
 }
 
 .categories {
-    padding-top: 2em;
-    background-color: royalblue;
+    padding-top: 1.5em;
 }
 
 .categories__item {
@@ -83,27 +88,23 @@ body {
 }
 
 .sort-bottom {
-    background-color: aqua;
     display: none;
 }
 
 .content {
     padding-top: 2em;
-    background-color: green;
 }
 
 .content__items {
-    padding-top: 2em;
+    padding-top: 3em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .pizza {
-    margin-bottom: 3em;
-    height: 24em;
+    margin-bottom: 4em;
     width: 16em;
-    background-color: grey;
 }
 
 .pizza__image {
@@ -117,24 +118,27 @@ body {
 .pizza__title {
     font-size: 1.1em;
     text-align: center;
-    margin-top: 0.4em;
+    margin-top: 0.8em;
     margin-bottom: 0.8em;
 }
 
 .pizza__filter {
     padding: 0.2em;
-    background-color: orange;
-    height: 4em;
+    background-color: #e0e0e0;
     border-radius: 0.5em;
 }
 
-.pizza__parameters {
+.pizza__dough-parameters {
     display: flex;
-    height: 50%;
+}
+
+.pizza__size-parameters {
+    display: flex;
+    padding-top: 0.1em;
 }
 
 .pizza__bottom {
-    margin-top: 0.5em;
+    margin-top: 1em;
     display: flex;
     justify-content: space-between;
 }
@@ -144,16 +148,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-/*.button-layout-pizza-settings {*/
-/*    margin: 0.1em;*/
-/*    background-color: coral;*/
-/*    width: 50%;*/
-/*    border-radius: 0.25em;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/
 
 .button-layout {
     background-color: gray;
@@ -173,13 +167,14 @@ body {
 }
 
 .category-button {
-    background-color: #cecccc;
-    margin-right: 0.2em;
-    margin-bottom: 0.2em;
+    background-color: #e0e0e0;
+    margin-right: 0.3em;
+    margin-bottom: 0.3em;
     text-align: center;
-    padding-right: 1em;
-    padding-left: 1em;
-    height: 2.2em;
+    padding-right: 1.2em;
+    padding-left: 1.2em;
+    border-radius: 1.2em;
+    height: 2.4em;
 }
 
 .header-button {
@@ -187,8 +182,8 @@ body {
     overflow: hidden;
     background-color: orangered;
     color: white;
-    height: 2.5em;
-    border-radius: 1.2em;
+    height: 3em;
+    border-radius: 1.4em;
     align-self: center;
     padding-right: 1em;
     padding-left: 1em;
@@ -208,10 +203,15 @@ body {
 }
 
 .categories .button_selected {
-    background-color: #1b1b23;
+    background-color: #363636;
 }
 
-.pizza__parameters .button_selected {
+.pizza__dough-parameters .button_selected {
+    background-color: white;
+    color: black;
+}
+
+.pizza__size-parameters .button_selected {
     background-color: white;
     color: black;
 }
