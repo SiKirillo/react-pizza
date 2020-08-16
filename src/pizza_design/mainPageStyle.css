@@ -6,6 +6,7 @@ body {
     border-radius: 0.5em;
     margin: 3%;
     font-size: 20px;
+    /*font-size: calc((100vw - 480px) / (1900 - 480) * (24 - 16) + 16px);*/
     font-family: Gill Sans, sans-serif;
     background-color: white;
 }
@@ -97,9 +98,9 @@ body {
 
 .content__items {
     padding-top: 3em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
 }
 
 .pizza {
@@ -110,16 +111,17 @@ body {
 .pizza__image {
     height: 14em;
     width: 14em;
-    margin-left: 1em;
-    margin-right: 1em;
-    background-color: aqua;
+    margin: 0 1em;
+}
+
+.pizza__image img {
+    width: 100%;
 }
 
 .pizza__title {
     font-size: 1.1em;
     text-align: center;
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
+    margin: 0.8em 0;
 }
 
 .pizza__filter {
@@ -171,13 +173,12 @@ body {
     margin-right: 0.3em;
     margin-bottom: 0.3em;
     text-align: center;
-    padding-right: 1.2em;
-    padding-left: 1.2em;
+    padding: 0 1.2em;
     border-radius: 1.2em;
     height: 2.4em;
 }
 
-.header-button {
+.cart-button {
     word-break: break-all;
     overflow: hidden;
     background-color: orangered;
@@ -185,16 +186,14 @@ body {
     height: 3em;
     border-radius: 1.4em;
     align-self: center;
-    padding-right: 1em;
-    padding-left: 1em;
+    padding: 0 1em;
 }
 
 .bottom-button {
     background-color: white;
     border: 2px solid orangered;
     color: orangered;
-    padding-right: 0.6em;
-    padding-left: 0.6em;
+    padding: 0 0.6em;
 }
 
 .button_selected {
@@ -224,15 +223,40 @@ body {
     background-color: orangered;
     color: white;
     margin-left: 0.5em;
-    border-radius: 1.4em;
+    border-radius: 50%;
     height: 1.4em;
-    padding-right: 0.5em;
-    padding-left: 0.5em;
+    width: 1.4em;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .button_selected .button_re-selected {
     background-color: white;
     color: orangered;
+}
+
+@media screen and (max-width: 1600px) {
+    .content__items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background: black;
+    }
+    /*.content__items {*/
+    /*    grid-template-columns: repeat(1, 1fr);*/
+    /*}*/
+
+    /*.main {*/
+    /*    font-size: 25px;*/
+    /*}*/
 }
